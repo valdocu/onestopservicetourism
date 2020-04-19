@@ -11,7 +11,7 @@ import wisata from './onclick/wisata';
 import rumahsakit from './onclick/rumahsakit';
 import rumahmakan from './onclick/rumahmakan';
 import tempattinggal from './onclick/tempattinggal';
-
+import nodarurat from './onclick/nodarurat';
 import spbu from './onclick/spbu';
 
 //wisata
@@ -178,7 +178,7 @@ const Menu = createStackNavigator({
   rumahsakit:{screen: rumahsakit},
   rumahmakan:{screen: rumahmakan},
   tempattinggal:{screen: tempattinggal},
-  
+  nodarurat:{screen:nodarurat},
   spbu:{screen:spbu},
 
   valentinehills:{screen: valentinehills},
