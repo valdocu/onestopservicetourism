@@ -22,15 +22,16 @@ export default class mahoni extends React.Component {
             <View style={{height: 250}}>
                 <Swiper>
                 <Image style={styles.avatar} 
-                  source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/03/Screenshot_20200321-150851_1.jpg'}}/>
-                <Image style={styles.avatar}
-                  source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/03/Screenshot_20200321-150837_1.jpg'}}/>
-                <Image style={styles.avatar}
                   source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/03/Screenshot_20200321-150737_1.jpg'}}/>
+                <Image style={styles.avatar}
+                  source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/04/Screenshot_20200424-203355_1.jpg'}}/>
+                <Image style={styles.avatar}
+                  source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/04/Screenshot_20200424-203330_1.jpg'}}/>
                 <Image style={styles.avatar}
                   source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/03/mahonii-1024x768.jpg'}}/>
                </Swiper>
              </View>
+             
                
              <View style={styles.postContent}>
               <Text style={styles.postTitle}>
@@ -55,7 +56,7 @@ export default class mahoni extends React.Component {
 
               <View style={{justifyContent: 'center', alignItems: 'center', padding: 10}}>
               <Video
-               source={{ uri: ' http://fkep.unklab.site/wp-content/uploads/2020/03/welu-cafe.mp4' }}
+               source={{ uri: ' http://fkep.unklab.site/wp-content/uploads/2020/05/videoplayback-5.mp4' }}
                useNativeControls
                
                style={{ justifyContent: 'center', alignItems: 'center', width: 320, height: 200}}
@@ -101,6 +102,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "black",
     marginBottom:10,
+  },
+  date:{
+    color: 'blue',
+    marginLeft: 10,
   },
   userImage:{
     height: 100,

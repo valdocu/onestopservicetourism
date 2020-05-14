@@ -15,9 +15,14 @@ export default class about extends Component {
       <ScrollView>
         <View style={styles.container}>
           <View style={styles.header}>
+          <Image style={styles.logo}
+                  source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/05/LogoFIK-V3-standAlone-790x1024.png'}}/>
+          <Image style={styles.logoo}
+                  source={{uri: 'http://fkep.unklab.site/wp-content/uploads/2020/05/logo-unklab.png'}}/>
               <Text style={styles.headerTitle}>
                 About Us
               </Text>
+             
           </View>
 
           <View style={styles.postContent}>
@@ -42,9 +47,7 @@ export default class about extends Component {
               </Text>
              
 
-              <Text style={styles.date}>
-                2017-11-27 13:03:01
-              </Text>
+             
 
               <View style={styles.profile}>
                 <Image style={styles.avatar}
@@ -136,16 +139,23 @@ const styles = StyleSheet.create({
     marginTop:10,
   },
  
-  date:{
-    color: '#696969',
-    marginTop:10,
-  },
   avatar: {
     width: 80,
     height: 85,
     borderRadius: 35,
     borderWidth: 4,
     borderColor: "#00BFFF",
+  },
+  logo: {
+    width: 80,
+    height: 85,
+    marginLeft: 200,
+  },
+  logoo: {
+    width: 65,
+    height: 65,
+    marginRight: 200,
+    marginTop: -76
   },
   profile:{
     flexDirection: 'row',

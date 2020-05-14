@@ -66,7 +66,7 @@ export default class valentinehills extends Component {
               <Video
                source={{ uri: 'http://fkep.unklab.site/wp-content/uploads/2020/03/valentine-hills.mp4' }}
                useNativeControls
-               
+             
                style={{ justifyContent: 'center', alignItems: 'center', width: 320, height: 200}}
                 />
          </View>    

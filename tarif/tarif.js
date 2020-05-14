@@ -46,6 +46,7 @@ export default class tarif extends Component {
 
   renderItem = ({item}) => {
     return (
+     
       <TouchableOpacity>
         <View style={styles.row}>
           <Image source={{ uri: item.image }} style={styles.pic} />
@@ -65,7 +66,12 @@ export default class tarif extends Component {
 
   render() {
     return(
+     
       <View style={{ flex: 1 }} >
+          <Text style={styles.headerTitle}>
+            Informasi tarif angkutan umum yang diberikan bisa saja berubah sesuai dengan
+            penetapan dari pemerintah 
+             </Text>
         <FlatList 
           extraData={this.state}
           data={this.state.calls}
@@ -74,6 +80,7 @@ export default class tarif extends Component {
           }}
           renderItem={this.renderItem}/>
       </View>
+      
     );
   }
 }
@@ -104,7 +111,14 @@ const styles = StyleSheet.create({
     fontSize: 12,
     width:170,
   },
- 
+  headerTitle:{
+    fontSize:20,
+    color:"#00BFFF",
+    marginTop:5,
+    alignItems: 'center',
+    fontWeight: 'bold'
+
+  },
   msgContainer: {
     flexDirection: 'row',
     alignItems: 'center',
